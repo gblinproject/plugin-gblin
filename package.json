@@ -1,0 +1,73 @@
+{
+  "name": "plugin-gblin",
+  "version": "0.2.1",
+  "description": "ElizaOS plugin — gasless treasury rail for AI agents on Base mainnet. Routes idle USDC into the GBLIN MEV-protected cbBTC/WETH basket and JIT-swaps back to USDC for x402 invoices.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "images",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc --noEmit false",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "elizaos",
+    "elizaos-plugin",
+    "plugin",
+    "gblin",
+    "x402",
+    "treasury",
+    "defi",
+    "base-mainnet",
+    "ai-agent",
+    "jit-swap",
+    "mev-protection",
+    "usdc",
+    "cbbtc",
+    "weth"
+  ],
+  "author": "GBLIN Protocol",
+  "license": "MIT",
+  "homepage": "https://gblin.digital/agents",
+  "bugs": {
+    "url": "https://github.com/gblinproject/GBLIN_PLUGIN/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gblinproject/GBLIN_PLUGIN.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@elizaos/core": "^1.0.0"
+  },
+  "dependencies": {
+    "@x402/core": "^2.13.0",
+    "@x402/evm": "^2.13.0",
+    "@x402/fetch": "^2.13.0",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@elizaos/cli": "^1.7.2",
+    "@elizaos/core": "^1.0.0",
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageType": "plugin",
+  "platform": "node",
+  "agentConfig": {
+    "pluginType": "elizaos:plugin:1.0.0",
+    "pluginParameters": {}
+  },
+  "npmPackage": "@gblin_protocol/plugin-gblin"
+}
