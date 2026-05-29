@@ -52,6 +52,7 @@
     "@x402/core": "^2.13.0",
     "@x402/evm": "^2.13.0",
     "@x402/fetch": "^2.13.0",
+    "plugin-gblin": "^0.2.0",
     "viem": "^2.21.0"
   },
   "devDependencies": {
